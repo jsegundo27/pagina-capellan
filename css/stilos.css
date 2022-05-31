@@ -1,0 +1,374 @@
+/* 
+  color 1: #fF8400
+  color2: #80080E
+*/
+
+@import url('https://fonts.googleapis.com');
+@import url('https://fonts.gstatic.com" crossorigin');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@600&display=swap');
+--root {
+    --rojo: #80080E;
+    --naranja: #fF8400;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container-main .container-menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    align-content: center;
+    height: 107px;
+    box-shadow: 0px 4px 8px rgb(0, 0, 0) !important;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background: #fff;
+}
+
+.container-menu .logo-capellan {
+    flex: 5 auto;
+}
+
+.container-menu .logo-capellan img {
+    max-width: 255px;
+    width: 100%;
+    margin-left: 150px;
+}
+
+.container-menu .menu-principal {
+    flex: 2 auto;
+    position: relative;
+}
+
+.container-main .menu-principal .lista-menu {
+    display: flex;
+    font-size: 20px;
+}
+
+.container-main .menu-principal .lista-menu li {
+    list-style: none;
+    margin-left: 80px;
+}
+
+.container-main .menu-principal .lista-menu li a {
+    text-decoration: none;
+    color: black
+}
+
+.container-main .menu-principal .lista-menu button {
+    margin-left: 80px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 8px;
+    border: 3px solid #80080E;
+    cursor: pointer;
+    background: #fff;
+    margin-top: -10px;
+}
+
+.lista-menu .close {
+    display: none;
+}
+
+.container-main .menu-bars {
+    display: none;
+}
+
+.container-main .menu-principal .lista-menu i {
+    color: #fF8400;
+}
+
+.container-main .menu-principal .lista-menu a:hover {
+    color: #fF8400;
+}
+
+.container-main .menu-principal .lista-menu button:hover {
+    border: 3px solid #242424;
+    color: #fF8400;
+}
+
+
+/*banner slider*/
+
+.slider-principal .section-slider {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.slider-principal .section-slider .banner1 {
+    width: 100%;
+    height: 88vh;
+    background-attachment: fixed !important;
+    background-position: center;
+    background-size: auto;
+    object-fit: cover !important
+}
+
+.slider-principal .section-slider .banner2 {
+    display: none;
+    width: 100%;
+    height: 88vh;
+    background-attachment: fixed !important;
+    background-position: center;
+    background-size: auto;
+    transition-property: opacity, left;
+    transition-duration: 3s, 5s;
+}
+
+.slider-principal .section-slider .banner3 {
+    display: none;
+    width: 100%;
+    height: 88vh;
+    background-attachment: fixed !important;
+    background-position: center;
+    background-size: auto;
+    transition-property: opacity, left;
+    transition-duration: 3s, 5s;
+}
+
+.section-slider .section-banner {
+    position: absolute;
+    top: 200px;
+    left: 12%;
+    color: #fff;
+}
+
+.section-slider .section-banner h1 {
+    font-size: 7em;
+    text-shadow: 1px 1px 2px black;
+}
+
+.section-slider .section-banner h3 {
+    font-size: 4.5em;
+    letter-spacing: 2PX;
+}
+
+.section-slider .section-slider-cotenedor {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-slider .section-banner .parrafo1 {
+    width: 70%;
+    padding-left: 10px;
+    background: #fF8400;
+    font-size: 1em;
+    letter-spacing: 2PX;
+}
+
+.section-slider .section-banner .parrafo2 {
+    width: 50%;
+    background: #fF8400;
+    font-size: 1em;
+    padding-left: 10px;
+}
+
+.section-slider .section-banner button {
+    margin-top: 58px;
+    border-radius: 15px;
+    color: hsl(357, 78%, 32%);
+    padding: 2px;
+    font-weight: 400;
+    font-size: 35px;
+    width: 300px;
+    border: none;
+    font-family: 'Bahnschrift';
+    box-shadow: 10px 5px 8px rgb(102, 102, 102);
+    cursor: pointer;
+}
+
+.section-slider .section-banner .barra {
+    border-bottom: 10px solid #fF8400;
+    width: 60%;
+    margin-bottom: 25px;
+}
+
+
+/*los media queris*/
+
+@media (max-width:1800px) {
+    .container-menu .logo-capellan img {
+        margin-left: 0px;
+    }
+    .container-main .menu-bars {
+        margin-top: 15px;
+    }
+    .container-main .menu-bars {
+        margin-right: 0px;
+    }
+    .section-slider .section-banner h1 {
+        font-size: 5.5em;
+    }
+    .section-slider .section-banner .parrafo1 {
+        font-size: 0.8em;
+        letter-spacing: 2PX;
+        width: 73%;
+    }
+    .section-slider .section-banner .parrafo2 {
+        font-size: 0.8em;
+        letter-spacing: 2PX;
+        width: 51%;
+    }
+    .container-main .menu-bars {
+        display: block;
+        margin-right: 50px;
+        font-size: 22px;
+        color: #242424;
+        border: 2px solid #242424;
+        border-radius: 8px;
+        padding: 20px;
+    }
+    .container-main .bars {
+        text-decoration: none;
+    }
+    .container-main .container-menu {
+        padding: 50px;
+    }
+    .container-main .container-menu .lista-menu {
+        width: 410px;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        background: white;
+        top: 0px;
+        right: -450px;
+        padding: 40px;
+        box-shadow: 1px 1px 3px #252525;
+        transition: 2s, 1s, 2s;
+    }
+    .container-main .container-menu .lista-menu li {
+        border-bottom: 2px solid #aaaaaa;
+        margin-left: 0px;
+        padding: 10px;
+    }
+    .slider-principal .section-slider .banner1 {
+        display: none;
+    }
+    .slider-principal .section-slider .banner2 {
+        display: block;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: contain;
+    }
+    .section-slider .section-banner {
+        top: 85px;
+    }
+    .container-main .menu-principal .lista-menu button {
+        border: none;
+        margin-top: 20px;
+        text-align: start;
+        background: none;
+        color: #80080E;
+    }
+    .container-main .menu-principal .lista-menu button:hover {
+        border: none;
+        margin-top: 20px;
+        color: #fF8400;
+        text-align: start;
+        background: none;
+    }
+    .container-main .menu-principal .lista-menu button:click {
+        border: none;
+        margin-top: 20px;
+        color: #fF8400;
+        text-align: start;
+        background: none;
+    }
+    .container-main .menu-principal .lista-menu i {
+        float: left;
+    }
+    .container-main .menu-principal .lista-menu a {
+        margin-left: 20px;
+    }
+    .lista-menu .close {
+        display: block;
+        position: relative;
+        left: 300px;
+    }
+    .container-main .menu-bars:click {
+        background: #242424;
+        color: #fff;
+    }
+    .container-main .menu-bars:hover {
+        background: #242424;
+        color: #fff;
+    }
+}
+
+@media (max-width:1300px) {
+    .section-slider .section-banner .parrafo1 {
+        font-size: 0.6em;
+        width: 56%;
+    }
+    .section-slider .section-banner .parrafo2 {
+        font-size: 0.6em;
+        width: 40%;
+    }
+    .container-menu .logo-capellan img {
+        margin-left: 0px;
+    }
+    .container-main .menu-bars {
+        margin-top: 15px;
+    }
+    .container-main .menu-bars {
+        margin-right: 0px;
+    }
+}
+
+@media (max-width:1000px) {
+    .section-slider .section-banner h1 {
+        font-size: 3.2em;
+    }
+    .section-slider .section-banner .parrafo1 {
+        font-size: 0.4em;
+        width: 70%;
+    }
+    .section-slider .section-banner .parrafo2 {
+        font-size: 0.4em;
+        width: 48%;
+    }
+    .slider-principal .section-slider .banner2 {
+        display: none;
+    }
+    .slider-principal .section-slider .banner3 {
+        display: block;
+        background-repeat: no-repeat;
+        background-position: center
+    }
+    .section-slider .section-banner button {
+        width: 200px;
+        height: 60px;
+        font-size: 24px;
+    }
+    .container-menu .logo-capellan img {
+        margin-left: 0px;
+    }
+    .container-main .menu-bars {
+        margin-top: 15px;
+    }
+    .container-main .menu-bars {
+        margin-right: 0px;
+    }
+}
+
+@media (max-width:640px) {
+    .container-main .container-menu {
+        justify-self: flex-start
+    }
+    .container-menu .logo-capellan img {
+        margin-left: 0px;
+    }
+    .container-main .menu-bars {
+        margin-top: 15px;
+    }
+    .container-main .menu-bars {
+        margin-right: 0px;
+    }
+}
