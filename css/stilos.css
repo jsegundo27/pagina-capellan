@@ -324,15 +324,15 @@
 
 @media (max-width:1000px) {
     .section-slider .section-banner h1 {
-        font-size: 3.2em;
+        font-size: 3.5em;
     }
     .section-slider .section-banner .parrafo1 {
         font-size: 0.4em;
-        width: 70%;
+        width: 60%;
     }
     .section-slider .section-banner .parrafo2 {
         font-size: 0.4em;
-        width: 48%;
+        width: 43%;
     }
     .slider-principal .section-slider .banner2 {
         display: none;
@@ -355,6 +355,9 @@
     }
     .container-main .menu-bars {
         margin-right: 0px;
+    }
+    .section-slider .section-banner {
+        top: 130px
     }
 }
 
