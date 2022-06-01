@@ -126,7 +126,6 @@
     display: none;
     width: 100%;
     height: 88vh;
-    background-attachment: fixed !important;
     background-position: center;
     background-size: auto;
     transition-property: opacity, left;
@@ -373,5 +372,14 @@
     }
     .section-slider .section-banner {
         top: 130px
+    }
+}
+
+@media (max-width:314px) {
+    .section-slider .section-banner {
+        display: none;
+    }
+    .slider-principal .section-slider .banner1 {
+        background-position: 68%;
     }
 }
