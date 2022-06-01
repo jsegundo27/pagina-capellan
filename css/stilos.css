@@ -107,7 +107,7 @@
     width: 100%;
     height: 88vh;
     background-repeat: no-repeat;
-    background-position: 80% 10px;
+    background-position: 80% -30px;
     background-size: cover;
 }
 
@@ -376,10 +376,16 @@
 }
 
 @media (max-width:314px) {
-    .section-slider .section-banner {
-        display: nonegoy;
-    }
-    .slider-principal .section-slider .banner1 {
+    .slider-principal .section-slider .banner3 {
         background-position: 68%;
+    }
+}
+
+@media(max-width:645px) {
+    .container-main .menu-bars {
+        display: none;
+    }
+    .slider-principal .section-slider .section-banner {
+        display: none;
     }
 }
