@@ -340,7 +340,7 @@
         background-size: cover;
     }
     .slider-principal .section-slider .section-banner {
-        top: 500px;
+        top: 40%;
         justify-content: center;
         margin: 2px;
     }
