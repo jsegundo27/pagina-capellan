@@ -103,12 +103,13 @@
 }
 
 .slider-principal .section-slider .banner1 {
+    background: url(../images/banner-slider.png);
     width: 100%;
     height: 88vh;
+    background-repeat: no-repeat;
     background-attachment: fixed !important;
-    background-position: center;
-    background-size: auto;
-    object-fit: cover !important
+    background-position: 80% 80px;
+    background-size: cover;
 }
 
 .slider-principal .section-slider .banner2 {
@@ -141,13 +142,8 @@
 }
 
 .section-slider .section-banner h1 {
-    font-size: 7em;
+    font-size: 5.5em;
     text-shadow: 1px 1px 2px black;
-}
-
-.section-slider .section-banner h3 {
-    font-size: 4.5em;
-    letter-spacing: 2PX;
 }
 
 .section-slider .section-slider-cotenedor {
@@ -156,18 +152,18 @@
 }
 
 .section-slider .section-banner .parrafo1 {
-    width: 70%;
     padding-left: 10px;
     background: #fF8400;
-    font-size: 1em;
+    font-size: 2em;
     letter-spacing: 2PX;
+    width: 70%;
 }
 
 .section-slider .section-banner .parrafo2 {
-    width: 50%;
     background: #fF8400;
-    font-size: 1em;
+    font-size: 2em;
     padding-left: 10px;
+    width: 48%;
 }
 
 .section-slider .section-banner button {
@@ -203,19 +199,6 @@
     .container-main .menu-bars {
         margin-right: 0px;
     }
-    .section-slider .section-banner h1 {
-        font-size: 5.5em;
-    }
-    .section-slider .section-banner .parrafo1 {
-        font-size: 0.8em;
-        letter-spacing: 2PX;
-        width: 73%;
-    }
-    .section-slider .section-banner .parrafo2 {
-        font-size: 0.8em;
-        letter-spacing: 2PX;
-        width: 51%;
-    }
     .container-main .menu-bars {
         display: block;
         margin-right: 50px;
@@ -247,18 +230,6 @@
         border-bottom: 2px solid #aaaaaa;
         margin-left: 0px;
         padding: 10px;
-    }
-    .slider-principal .section-slider .banner1 {
-        display: none;
-    }
-    .slider-principal .section-slider .banner2 {
-        display: block;
-        background-repeat: no-repeat;
-        background-position: center top;
-        background-size: contain;
-    }
-    .section-slider .section-banner {
-        top: 80px;
     }
     .container-main .menu-principal .lista-menu button {
         border: none;
@@ -302,15 +273,22 @@
     }
 }
 
-@media (max-width:1300px) {
+@media (max-width:1650px) {
+    .section-slider .section-banner h1 {
+        padding-left: 10px;
+        font-size: 3.8em;
+    }
     .section-slider .section-banner .parrafo1 {
-        font-size: 0.6em;
-        width: 56%;
+        width: 80%;
+        font-size: 1.5em;
     }
     .section-slider .section-banner .parrafo2 {
-        font-size: 0.6em;
-        width: 40%;
+        width: 50%;
+        font-size: 1.5em;
     }
+}
+
+@media (max-width:1349px) {
     .container-menu .logo-capellan img {
         margin-left: 0px;
     }
@@ -320,27 +298,64 @@
     .container-main .menu-bars {
         margin-right: 0px;
     }
-}
-
-@media (max-width:1000px) {
     .section-slider .section-banner h1 {
-        font-size: 3.5em;
+        width: 80%;
+        font-size: 3.2em;
     }
     .section-slider .section-banner .parrafo1 {
-        font-size: 0.4em;
-        width: 60%;
+        width: 75%;
+        font-size: 1.2em;
     }
     .section-slider .section-banner .parrafo2 {
-        font-size: 0.4em;
-        width: 43%;
+        width: 50%;
+        font-size: 1.2em;
     }
-    .slider-principal .section-slider .banner2 {
-        display: none;
+    .section-slider .section-banner button {
+        margin-top: 16px;
     }
-    .slider-principal .section-slider .banner3 {
-        display: block;
+}
+
+@media (max-width:905px) {
+    .section-slider .section-banner h1 {
+        padding-left: 10px;
+        font-size: 2.6em;
+    }
+    .section-slider .section-banner .parrafo1 {
+        width: 80%;
+        font-size: 1em;
+    }
+    .section-slider .section-banner .parrafo2 {
+        width: 50%;
+        font-size: 1em;
+    }
+    .slider-principal .section-slider .section-banner {
+        top: 435px;
+    }
+}
+
+@media (max-width:1200px) {
+    .slider-principal .section-slider .banner1 {
+        background: url(../images/banner-slider-3.png);
         background-repeat: no-repeat;
-        background-position: center
+        background-position: 80%;
+        background-size: cover;
+    }
+    .slider-principal .section-slider .section-banner {
+        top: 500px;
+        justify-content: center;
+        margin: 2px;
+    }
+    .section-slider .section-banner h1 {
+        padding-left: 10px;
+        font-size: 2.6em;
+    }
+    .section-slider .section-banner .parrafo1 {
+        width: 80%;
+        font-size: 1em;
+    }
+    .section-slider .section-banner .parrafo2 {
+        width: 50%;
+        font-size: 1em;
     }
     .section-slider .section-banner button {
         width: 200px;
@@ -358,20 +373,5 @@
     }
     .section-slider .section-banner {
         top: 130px
-    }
-}
-
-@media (max-width:640px) {
-    .container-main .container-menu {
-        justify-self: flex-start
-    }
-    .container-menu .logo-capellan img {
-        margin-left: 0px;
-    }
-    .container-main .menu-bars {
-        margin-top: 15px;
-    }
-    .container-main .menu-bars {
-        margin-right: 0px;
     }
 }
